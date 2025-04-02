@@ -1,6 +1,9 @@
 name: run py script
 on: push
 
+env:
+  TZ: "Asia/Kolkata"
+
 jobs:
   python:
     runs-on: ubuntu-latest
