@@ -1,7 +1,11 @@
 name: cron
 on:
  schedule:
-   - cron: '14 * * * *'  # (minute) (hour) (day of month) (month of year) (day of week)
+   - cron: '30 * * * *'  # (minute) (hour) (day of month) (month of year) (day of week)
+
+env:
+ TZ: 'Asia/Kolkata'
+ LOCAL_TIME: "12:00"
 
 jobs:
   cron:
