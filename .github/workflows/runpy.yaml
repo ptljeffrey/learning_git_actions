@@ -15,4 +15,4 @@ jobs:
           python-version: "pypy3.10"
 
       - name: run py
-        run: python helloworld.py
+        run: python datetime.py
