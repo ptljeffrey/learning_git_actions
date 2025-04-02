@@ -3,6 +3,7 @@ on: push
 
 env:
   TZ: "Asia/Kolkata"
+  LOCAL_TIME: "12:00"
 
 jobs:
   python:
