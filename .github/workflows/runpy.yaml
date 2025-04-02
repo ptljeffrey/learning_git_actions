@@ -15,4 +15,7 @@ jobs:
           python-version: "pypy3.10"
 
       - name: run py
+        run: python helloworld.py
+
+      - name: datetime exe
         run: python datetime.py
