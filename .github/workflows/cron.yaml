@@ -1,8 +1,12 @@
 name: cron
-on:
- schedule:
-   - cron: '01 10 * * *'  # (minute) (hour) (day of month) (month of year) (day of week)
 
+# cron will execute only at UTC time zone
+# this cron will trigger at 10 AM, Everyday for April
+on:
+ schedule: 
+   - cron: '30 4 * 4 *'  # (minute) (hour) (day of month) (month) (day of week)
+
+# does not affect the triggering of cron
 env:
  TZ: "Asia/Kolkata"
  LOCAL_TIME: "12:00"
